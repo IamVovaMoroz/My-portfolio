@@ -3,7 +3,12 @@ import React from 'react'
 import Logo from './Logo'
 
 const CustomLink = ({ href, title, className = '' }) => {
-  return (<Link href={href} className={`${className}`}>{title}</Link>)
+  return (<Link href={href} className={`${className}`}>
+    {title}
+    <span className='h-1'>&nbsp;</span>
+ 
+  </Link>)
+  
 }
 
 
