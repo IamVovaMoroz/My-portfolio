@@ -37,6 +37,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import profilePicture from '../../public/images/profile/developer-pic-1.png'
 import AnimatedText from '@/components/AnimatedText'
+import Link from 'next/link'
+import { LinkArrow } from '@/components/Icons'
 
 export default function Home () {
   return (
@@ -61,18 +63,33 @@ export default function Home () {
 
           {/* Right part witn text */}
           <div className='w-1/2 flex flex-col items-center self-center'>
-            {/* Анимированный текст */}
+            {/* animated text */}
             <AnimatedText
-              text='Turning Vision Into Reality With Code And Design'
+              text='Transforming Ideas Into Real Web Solutions with Code and Design Excellence'
               className='!text-6xl !text-left'
             />
 
             {/* Text */}
-            <p>
-              As a skilled full-stack developer, I am dedicated to turning ideas
-              into innovative web applications. Explore my latest projects and
-              articles, showcasing my expertise in React.js and web development.
+            <p className='my-4 text-base font-medium'>
+              As an aspiring full-stack developer, I am enthusiastic about
+              learning and dedicated to turning creative ideas into innovative
+              web applications. My passion for web development drives me to
+              explore and expand my skills in both front-end and back-end
+              technologies. Explore my latest projects and articles, showcasing
+              my expertise in React.js and web development.
             </p>
+            <div className='flex items-center self-start mt-2'>
+              {/* target={'_blank'} - open in the new tab */}
+              <Link href='/dummy.pdf' target={'_blank'} 
+              className='flex items-center bg-dark text-light p-2.5 px-6 
+              rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
+              border-2 border-solid border-transparent hover:border-dark
+              ' download={true}>Resume <LinkArrow className={"w-6 ml-1"}/></Link>
+              <Link href='mailto:abcd@gmail.com' target={'_blank'}  className='flex items-center bg-dark text-light p-2.5 px-6 
+              rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
+              border-2 border-solid border-transparent hover:border-dark
+              '>Contact</Link>
+            </div>
           </div>
         </div>
       </Layout>
