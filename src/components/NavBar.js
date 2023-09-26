@@ -11,9 +11,9 @@
 //       {title}
 //       {/* router.asPath - current url in browser */}
 //       <span
-//         className={`h-[1px] inline-block bg-dark 
+//         className={`h-[1px] inline-block bg-dark
 //         absolute left-0 -bottom-0.5
-//          group-hover:w-full translate-[width] easy duration-300 
+//          group-hover:w-full translate-[width] easy duration-300
 //          ${router.asPath === href ? 'w-full' : 'w-0'}`}
 //       >
 //         &nbsp;
@@ -66,6 +66,14 @@ import Link from 'next/link'
 import React from 'react'
 import Logo from './Logo'
 import { useRouter } from 'next/router'
+import {
+  TelegramIcon,
+  TwitterIcon,
+  GithubIcon,
+  LinkedInIcon,
+  PinterestIcon
+} from './Icons'
+import { motion } from 'framer-motion'
 
 const CustomLink = ({ href, title, className = '' }) => {
   const router = useRouter()
@@ -75,7 +83,9 @@ const CustomLink = ({ href, title, className = '' }) => {
       {title}
       {/* router.asPath - текущий URL в браузере */}
       <span
-        className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full translate-[width] ease duration-300 ${router.asPath === href ? 'w-full' : 'w-0'}`}
+        className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full translate-[width] ease duration-300 ${
+          router.asPath === href ? 'w-full' : 'w-0'
+        }`}
       >
         &nbsp;
       </span>
@@ -93,25 +103,52 @@ const NavBar = () => {
         <CustomLink href='/articles' title='Articles' className='ml-4' />
       </nav>
 
-      <nav>
-        <Link href='https://twitter.com' target={'_blank'} className='mr-4'>
-          Twitter
-        </Link>
-        <Link href='https://www.skype.com' target={'_blank'} className='mx-4'>
-          Skype
-        </Link>
-        <Link href='https://telegram.org' target={'_blank'} className='mx-4'>
-          Telegram
-        </Link>
-        <Link href='https://www.linkedin.com' target={'_blank'} className='mx-4'>
-          Linkedin
-        </Link>
-        <Link href='https://www.youtube.com' target={'_blank'} className='mx-4'>
-          Youtube
-        </Link>
-        <Link href='https://twitter.com' target={'_blank'} className='ml-4'>
-          Twitter
-        </Link>
+      <nav className='flex items-center justify-items-center flex-wrap'>
+        <motion.a
+          href=''
+          target={'_blank'}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className='mr-3 w-6'
+        >
+          <LinkedInIcon />
+        </motion.a>
+        <motion.a
+          href='https://twitter.com'
+          target={'_blank'}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className='mx-3 w-6'
+        >
+          <TwitterIcon />
+        </motion.a>
+        <motion.a
+          href='https://github.com/'
+          target={'_blank'}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className='mx-3 w-6'
+        >
+          <GithubIcon />
+        </motion.a>
+        <motion.a
+          href='https://www.pinterest.com/'
+          target={'_blank'}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className='mx-3 w-6'
+        >
+          <PinterestIcon />
+        </motion.a>
+        <motion.a
+          href='https://telegram.org/'
+          target={'_blank'}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className='ml-3 w-6'
+        >
+          <TelegramIcon />
+        </motion.a>
       </nav>
 
       <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
