@@ -39,6 +39,7 @@ import profilePicture from '../../public/images/profile/developer-pic-1.png'
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
+import HireMe from '@/components/HireMe'
 
 export default function Home () {
   return (
@@ -85,14 +86,18 @@ export default function Home () {
               rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
               border-2 border-solid border-transparent hover:border-dark
               ' download={true}>Resume <LinkArrow className={"w-6 ml-1"}/></Link>
-              <Link href='mailto:abcd@gmail.com' target={'_blank'}  className='flex items-center bg-dark text-light p-2.5 px-6 
-              rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
-              border-2 border-solid border-transparent hover:border-dark
+              <Link href='mailto:abcd@gmail.com' target={'_blank'}  className='flex items-center  ml-4 p-2.5 px-6 
+              rounded-lg text-lg font-semibold 
+              border-2 border-solid border-transparent hover:border-dark underline
               '>Contact</Link>
             </div>
           </div>
         </div>
       </Layout>
+      <HireMe/>
+      <div>
+        <Image src="" alt="Volodymyr Moroz" className='w-full h-auto'/>
+      </div>
     </>
   )
 }
