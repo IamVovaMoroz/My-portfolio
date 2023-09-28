@@ -1,9 +1,39 @@
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import Head from 'next/head'
-import React from 'react'
-import profilePic from '../../public/images/profile/Photo.png'
+import React, { useEffect, useRef } from 'react'
+import profilePic from '../../public/images/profile/photo123.jpg'
 import Image from 'next/image'
+import { useInView, useMotionValue, useSpring } from 'framer-motion'
+
+const AnimatedNumbers = ({value}) =>{
+    const ref = useRef(null)
+
+    const motionValue = useMotionValue(0)
+
+    const springValue = useSpring(motionValue, {duration: 3000})
+
+    const isInView = useInView(ref)
+
+    useEffect(()=>{
+        if(isInView){motionValue.set(value)}
+    },[isInView, value, motionValue])
+
+
+useEffect(()=>{
+    springValue.on("change", (latest)=>{
+        if(ref.current && latest.toFixed(0) <= value) {
+            ref.current.textContent = latest.toFixed(0)
+        }
+    })
+},[springValue, value])
+
+
+    return <span ref={ref}></span>
+}
+
+
+
 
 function about () {
   return (
@@ -22,11 +52,11 @@ function about () {
                 Biography
               </h2>
               <p className='font-medium'>
-                - Hello, I'm Volodymyr Moroz, a Junior Full Stack Developer specializing in Node.js. My journey into the world of technology began with a strong engineering background, providing me with a solid foundation for creative problem-solving. I have a wealth of experience managing websites on a platform akin to WordPress, and this experience has been instrumental in shaping my approach to web development.
+                - Hello, I&apos;m  Volodymyr Moroz, a Junior Full Stack Developer specializing in Node.js. My journey into the world of technology began with a strong engineering background, providing me with a solid foundation for creative problem-solving. I have a wealth of experience managing websites on a platform akin to WordPress, and this experience has been instrumental in shaping my approach to web development.
               </p>
 
               <p className='my-4 font-medium'>
-                - My passion for technology eventually led me to a pivotal decision – to transition from website management to programming, aligning my career with my true passion. I embarked on an intensive course in cutting-edge technologies, successfully earning a diploma as a Full-Stack Developer specializing in Node.js.
+                - My passion for technology eventually led me to a pivotal decision - to transition from website management to programming, aligning my career with my true passion. I embarked on an intensive course in cutting-edge technologies, successfully earning a diploma as a Full-Stack Developer specializing in Node.js.
               </p>
               <p className='font-medium'>
                 - My proficiency spans a wide range of technologies crucial for modern development, including HTML5, CSS3, SASS, JavaScript, React, Redux, Node.js, Git, Next.js, Tailwind CSS, and Framer-motion. My portfolio, meticulously crafted using Next.js, Tailwind CSS, and Framer-motion, showcases my capabilities. Here, you can explore my projects, access my resume, and find links to my social profiles, including GitHub. I'm excited about the prospect of collaborating on innovative projects and contributing my expertise to your team.
@@ -35,13 +65,42 @@ function about () {
 
             <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark'>
 
-                <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark'/>
+                <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark'/>
               <Image
                 src={profilePic}
                 alt='Volodymyr Moroz'
                 className='w-full h-auto rounded-2xl bg-light p-8'
               />
             </div>
+
+<div className='col-span-2 flex flex-col items-end justify-between'>
+
+   
+
+    <div className='flex flex-col items-end justify-center'>
+    <span className='inline-block text-7xl font-bold'>
+        <AnimatedNumbers value={4}/>
+            {/* 4 */}
+        </span>
+        <h2 className='text-xl font-medium capitalize text-dark/75'>project completed</h2>
+    </div>
+    <div className='flex flex-col items-end justify-center'>
+<span className='inline-block text-7xl font-bold'>
+            1+
+        </span>
+        <h2 className='text-xl font-medium capitalize text-dark/75'>year of experience</h2>
+    </div>
+    
+     {/* <div className='flex flex-col items-end justify-center'>
+        <span className='inline-block text-7xl font-bold'>
+            50+
+        </span>
+        <h2>satisfied clients</h2>
+    </div> */}
+
+</div>
+
+
           </div>
         </Layout>
       </main>
