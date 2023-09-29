@@ -3,7 +3,7 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  //we need add family fonts from _app.js
+  //we need to add family fonts from _app.js
   theme: {
     extend: {
       fontFamily: {
@@ -16,8 +16,13 @@ module.exports = {
         primaryDark: "#58E6D9", // 80,230,217
       },
       animation: {
-        'spin-slow' : 'spin 9s linear infinite'}
+        'spin-slow' : 'spin 9s linear infinite',
+      },
+      backgroundImage: {
+        circularLight: 'repeating-radial-gradient(rgba(0,0,0,0.5) 2px, #f5f5f5 5px, #f5f5f5 100px)',
+      },
     },
+   
   },
   plugins: [],
 }

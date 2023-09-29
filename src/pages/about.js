@@ -2,9 +2,11 @@ import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import Head from 'next/head'
 import React, { useEffect, useRef } from 'react'
-import profilePic from '../../public/images/profile/photo123.jpg'
+import profilePic from '../../public/images/profile/foto1-bg.png'
 import Image from 'next/image'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
+import Skills from '@/components/Skills'
+import Experience from '@/components/Experience'
 
 const AnimatedNumbers = ({value}) =>{
     const ref = useRef(null)
@@ -13,7 +15,7 @@ const AnimatedNumbers = ({value}) =>{
 
     const springValue = useSpring(motionValue, {duration: 3000})
 
-    const isInView = useInView(ref)
+    const isInView = useInView(ref, {once: true})
 
     useEffect(()=>{
         if(isInView){motionValue.set(value)}
@@ -79,7 +81,7 @@ function about () {
 
     <div className='flex flex-col items-end justify-center'>
     <span className='inline-block text-7xl font-bold'>
-        <AnimatedNumbers value={4}/>
+        <AnimatedNumbers value={5}/>
             {/* 4 */}
         </span>
         <h2 className='text-xl font-medium capitalize text-dark/75'>project completed</h2>
@@ -102,6 +104,8 @@ function about () {
 
 
           </div>
+          <Skills/>
+          <Experience/>
         </Layout>
       </main>
     </>
