@@ -3,7 +3,7 @@ import { motion, useScroll } from 'framer-motion';
 import LiIcon from './LiIcon';
 
 
-const Details = ({ type, time, place, info }) => {
+const Details = ({ type, time, place, info, certificate }) => {
 
 const ref = useRef(null)
 
@@ -37,7 +37,7 @@ const {scrollYProgress} = useScroll(
 
   return (
     <div className='my-64'>
-      <h2 className='font-bold text-8xl mb-32 w-full text-center'>Experience</h2>
+      <h2 className='font-bold text-8xl mb-32 w-full text-center'>Education</h2>
       <div ref={ref} className='w-[75%] mx-auto relative'>
 
         <motion.div
@@ -45,16 +45,15 @@ const {scrollYProgress} = useScroll(
         className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'/>
         <ul className='w-full flex flex-col items-start justify-between ml-4'>
           <Details
-            position="Full-Stack Developer"
-            company="Google"
-            companyLink="https://www.google.com/"
-            time="2023-Present"
-            address="Geneva, Switzerland"
-            work="Worked on a team responsible for developing new features for Google's 
-              search engine, including improving the accuracy and relevance of search results and 
-              developing new tools for data analysis and visualization."
+          
+            type="Full-Stack Developer Node.js"
+            time="2022-2023"
+            place="GoIT.global"
+            info="This course offers a comprehensive curriculum, including fundamental programming languages (HTML5, CSS3, SASS, JavaScript, React, Redux, Node.js) and key concepts like data structures and algorithms. Additionally, it features a year-long IT English course for industry-specific communication enhancement and provides valuable hands-on experience through collaborative team projects in web application development."
+            certificate="https://drive.google.com/file/d/1_Lg-RBGhA2KUQ-RDg79NidxBtIA1DDvr/view"       
+           
           />
-         
+        
           
         </ul>
       </div>
