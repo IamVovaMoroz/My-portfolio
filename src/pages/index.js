@@ -20,7 +20,8 @@ export default function Home () {
       </Head>
 
       {/* Main content */}
-      <Layout>
+      <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
+      <Layout className='pt-0'>
         <div className='flex items-center justify-between w-full'>
           {/* Left part with image */}
           <div className='w-1/2'>
@@ -54,15 +55,19 @@ export default function Home () {
               className='flex items-center bg-dark text-light p-2.5 px-6 
               rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
               border-2 border-solid border-transparent hover:border-dark
+               dark:bg-light dark:text-dark 
+               hover:dark:bg-dark hover:dark:text-light  hover:dark:border-light
               ' download={true}>Resume <LinkArrow className={"w-6 ml-1"}/></Link>
+
               <Link href='mailto:abcd@gmail.com' target={'_blank'}  className='flex items-center  ml-4 p-2.5 px-6 
               rounded-lg text-lg font-semibold 
-              border-2 border-solid border-transparent hover:border-dark underline
+              border-2 border-solid border-transparent hover:border-dark underline dark:text-light
               '>Contact</Link>
             </div>
           </div>
         </div>
       </Layout>
+      </main>
       <HireMe/>
       <div className='absolute right-6  bottom-1 inline-block w-24'>
         <Image src={lightBulb} alt="Volodymyr Moroz" className='w-full h-auto'/>
