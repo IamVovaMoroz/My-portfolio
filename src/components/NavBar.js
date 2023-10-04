@@ -1,6 +1,6 @@
 
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from './Logo'
 import { useRouter } from 'next/router'
 import {
@@ -22,7 +22,7 @@ const CustomLink = ({ href, title, className = '' }) => {
   return (
     <Link href={href} className={`${className} relative group`}>
       {title}
-      {/* router.asPath - текущий URL в браузере */}
+      {/* router.asPath - current URL in browser */}
       <span
         className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full translate-[width] ease duration-300 ${
           router.asPath === href ? 'w-full' : 'w-0'
@@ -38,9 +38,25 @@ const CustomLink = ({ href, title, className = '' }) => {
 const NavBar = () => {
 
 const [mode,setMode] = useThemeSwitcher()
+// useState for mobile menu
+const [isOpen, setIsOpen] = useState(false)
+
+// func for mobile menu
+const nahdleClick = () =>{
+
+  setIsOpen(!isOpen)
+}
 
   return (
     <header className='w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light'>
+{/* mobile menu */}
+<button className=' flex-col justify-center items-center hidden lg:flex' onClick={nahdleClick}>
+  <span className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm  ${isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"}`}></span>
+  <span className={`bg-dark dark:bg-light transition-all duration-100 ease-out  block h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? "opacity-0" : "opacity-100"}`}></span>
+  <span className={`bg-dark dark:bg-light transition-all duration-300 ease-out  block h-0.5 w-6 rounded-sm  ${isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"}`}></span>
+  </button>
+
+<div className='w-full flex justify-between items-center lg:hidden'>
       <nav>
         <CustomLink href='/' title='Home' className='mr-4' />
         <CustomLink href='/about' title='About' className='mx-4' />
@@ -49,6 +65,8 @@ const [mode,setMode] = useThemeSwitcher()
       </nav>
 
       <nav className='flex items-center justify-items-center flex-wrap'>
+
+
         <motion.a
           href=''
           target={'_blank'}
@@ -81,7 +99,7 @@ const [mode,setMode] = useThemeSwitcher()
           target={'_blank'}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          className='mx-3 w-6'
+          className='mx-3 w-6 bg-light rounded-full'
         >
           <PinterestIcon />
         </motion.a>
@@ -102,6 +120,8 @@ const [mode,setMode] = useThemeSwitcher()
 </button>
 
       </nav>
+</div>
+
 
       <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
         <Logo />

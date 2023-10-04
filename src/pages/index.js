@@ -20,7 +20,7 @@ export default function Home () {
       </Head>
 
       {/* Main content */}
-      <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
+      <main className='flex items-center text-dark w-full min-h-screen dark:text-light '>
       <Layout className='pt-0'>
         <div className='flex items-center justify-between w-full'>
           {/* Left part with image */}
@@ -29,6 +29,9 @@ export default function Home () {
               src={profilePicture}
               alt='CodeImage'
               className='w-full h-auto'
+              priority 
+            
+              sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw"
             />
           </div>
 

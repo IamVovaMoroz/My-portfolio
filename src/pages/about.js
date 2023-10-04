@@ -73,9 +73,9 @@ function about () {
                 src={profilePic}
                 alt='Volodymyr Moroz'
                 className='w-full h-auto rounded-2xl'
-                priority={true} 
-                width={500} // Укажите ширину и высоту изображения
-                height={300}
+                priority 
+            
+              sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 33vw"
               />
             </div>
 

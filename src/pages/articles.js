@@ -53,6 +53,8 @@ const MovingImg = ({ title, img, link }) => {
         src={img}
         alt={title}
         className='z-10 w-96 h-auto hidden absolute rounded-lg'
+        priority
+        sizes='(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw'
       />
     </Link>
   )
@@ -68,7 +70,9 @@ const Article = ({ img, title, date, link }) => {
          text-dark first: mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light  dark:bg-dark dark:text-light'
     >
       <MovingImg title={title} img={img} link={link} />
-      <span className='text-primary font-semibold pl-4 dark:text-primaryDark'>{date}</span>
+      <span className='text-primary font-semibold pl-4 dark:text-primaryDark'>
+        {date}
+      </span>
     </motion.li>
   )
 }
@@ -89,6 +93,8 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
           className='w-full h-auto'
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
+          priority
+          sizes='(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw'
         />
       </Link>
       <Link href={link} target='_blank'>
@@ -97,7 +103,9 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
         </h2>
       </Link>
       <p className='text-sm mb-2'>{summary}</p>
-      <span className='text-primary font-semibol  dark:text-primaryDark'>{time}</span>
+      <span className='text-primary font-semibol  dark:text-primaryDark'>
+        {time}
+      </span>
     </li>
   )
 }
@@ -108,10 +116,7 @@ function articles () {
       <Head>
         {/* title on a web page for SEO  */}
         <title>Articles page </title>
-        <meta
-          name='description'
-          content='any description for SEO'
-        />{' '}
+        <meta name='description' content='any description for SEO' />{' '}
       </Head>
       <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
         <Layout className='pt-16'>
