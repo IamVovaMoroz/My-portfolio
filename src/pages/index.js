@@ -52,9 +52,9 @@ export default function Home () {
                 showcasing my expertise in React.js and web development.
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
-                {/* target={'_blank'} - open in the new tab,, /dummy.pdf - lace for resume */}
+                {/* target={'_blank'} - open in the new tab,, /dummy.pdf - place for resume */}
                 <Link
-                  href='/dummy.pdf'
+                  href='/myPortfolio.pdf'
                   target={'_blank'}
                   className='flex items-center bg-dark text-light p-2.5 px-6 
               rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
