@@ -1,4 +1,3 @@
-
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import Head from 'next/head'
@@ -41,7 +40,7 @@ function about () {
   return (
     <>
       <Head>
-        {/* title on a web page for SEO */}
+        {/* title on a web page for SEO. */}
         <title>About page </title>
         <meta name='description' content='any description for SEO' />
       </Head>
@@ -75,6 +74,7 @@ function about () {
               <p className='font-medium'>
                 - My proficiency spans a wide range of technologies crucial for
                 modern development, including HTML5, CSS3, SASS, JavaScript,
+
                 React, Redux, Node.js, Git, Next.js, Tailwind CSS, and
                 Framer-motion. My portfolio, meticulously crafted using Next.js,
                 Tailwind CSS, and Framer-motion, showcases my capabilities.
