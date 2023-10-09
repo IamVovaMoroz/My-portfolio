@@ -40,7 +40,7 @@ function about () {
   return (
     <>
       <Head>
-        {/* title on a web page for SEO. */}
+        {/* title on a web page for SEO */}
         <title>About page </title>
         <meta name='description' content='any description for SEO' />
       </Head>
