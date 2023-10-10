@@ -36,14 +36,12 @@ function Experience() {
           className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]'     />
         <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
           <Details
-            position="Full-Stack Developer"
-            company="Google"
-            companyLink="https://www.google.com/"
-            time="2023-Present"
-            address="Geneva, Switzerland"
-            work="Worked on a team responsible for developing new features for Google's 
-              search engine, including improving the accuracy and relevance of search results and 
-              developing new tools for data analysis and visualization."
+            position="Full-Stack Developer (Upcoming)"
+            company="Your Future Company"
+            companyLink="/"
+            time="Expected Start Date: 2023"
+            address="Location: Your Preferred Location"
+            work="I'm thrilled to join Your Future Company as a Full-Stack Developer in 2023. I'll be working on creating innovative web features, improving user experiences, and collaborating with cross-functional teams. I'm excited to use my skills to make a significant impact here."
           />
            <Details
             position="Founder and director"
@@ -51,7 +49,7 @@ function Experience() {
             companyLink="/"
             time="2013-2023"
             address="Odessa, Ukraine"
-            work="I ventured into the world of e-commerce by launching multiple online stores specializing in electronics and health products. Through meticulous design, effective online marketing, and a strong commitment to customer satisfaction, I achieved remarkable success with my flagship store, serving more than 30,000 delighted customers. This experience not only solidified my expertise in e-commerce but also honed my skills in web design and digital marketing, which continue to be valuable assets in my career."
+            work="I ventured into the world of e-commerce by launching multiple online stores specializing in electronics and health products. Through meticulous design, effective online marketing, and a strong commitment to customer satisfaction, I achieved remarkable success with my flagship store, serving more than 30,000 delighted customers. This experience not only solidified my expertise in e-commerce but also honed my skills in web design and digital marketing, which continue to be valuable assets in my career"
           />
              <Details
             position="Deputy director of the newspaper"

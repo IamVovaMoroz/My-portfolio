@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import project5 from '../../public/images/projects/crypto-screener-cover-image.jpg'
-import project4 from '../../public/images/projects/web_1.jpg'
+import project4 from '../../public/images/projects/web2.jpg'
 import project3 from '../../public/images/projects/ice-cream_11.jpg'
 import project2 from '../../public/images/projects/films.jpg'
 import project1 from '../../public/images/projects/Calendar-image.jpg'
@@ -179,7 +179,7 @@ function projects () {
             <div className='col-span-6 sm:col-span-12'>
               {' '}
               <Project
-                title='Web Studio: Creative Business Solutions'
+                title='Web Studio: Innovative Creative Business Solutions'
                 img={project4}
                 summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
