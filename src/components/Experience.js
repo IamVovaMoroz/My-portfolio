@@ -46,24 +46,20 @@ function Experience() {
               developing new tools for data analysis and visualization."
           />
            <Details
-            position="Full-Stack Developer"
-            company="Google"
-            companyLink="https://www.google.com/"
-            time="2023-Present"
-            address="Geneva, Switzerland"
-            work="Worked on a team responsible for developing new features for Google's 
-              search engine, including improving the accuracy and relevance of search results and 
-              developing new tools for data analysis and visualization."
+            position="Founder and director"
+            company="Navigator"
+            companyLink="/"
+            time="2013-2023"
+            address="Odessa, Ukraine"
+            work="I ventured into the world of e-commerce by launching multiple online stores specializing in electronics and health products. Through meticulous design, effective online marketing, and a strong commitment to customer satisfaction, I achieved remarkable success with my flagship store, serving more than 30,000 delighted customers. This experience not only solidified my expertise in e-commerce but also honed my skills in web design and digital marketing, which continue to be valuable assets in my career."
           />
              <Details
-            position="Full-Stack Developer"
-            company="Google"
-            companyLink="https://www.google.com/"
-            time="2023-Present"
-            address="Geneva, Switzerland"
-            work="Worked on a team responsible for developing new features for Google's 
-              search engine, including improving the accuracy and relevance of search results and 
-              developing new tools for data analysis and visualization."
+            position="Deputy director of the newspaper"
+            company="Vechernie Vesti"
+            companyLink="https://gazetavv.com/"
+            time="2008-2013"
+            address="Odessa, Ukraine"
+            work="I organized sales through a dealer network, oversaw distribution, and managed the publication of one of the largest newspapers in Ukraine in Odessa, Odessa region, and the southern part of Ukraine. This experience greatly contributed to my skills in logistics, distribution, and managing large-scale operations, which I continue to apply to my future endeavors."
           />
         </ul>
       </div>
