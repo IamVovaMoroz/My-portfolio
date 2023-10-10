@@ -69,7 +69,7 @@ export default function Home () {
                 </Link>
 
                 <Link
-                  href='mailto:abcd@gmail.com'
+                  href='https://www.linkedin.com/in/volodymyr-moroz1/'
                   target={'_blank'}
                   className='flex items-center  ml-4 p-2.5 px-6 
               rounded-lg text-lg font-semibold 
