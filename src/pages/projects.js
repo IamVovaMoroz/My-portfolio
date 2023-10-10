@@ -5,7 +5,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg'
+import project5 from '../../public/images/projects/crypto-screener-cover-image.jpg'
+import project4 from '../../public/images/projects/web_1.jpg'
+import project3 from '../../public/images/projects/ice-cream_11.jpg'
+import project2 from '../../public/images/projects/films.jpg'
+import project1 from '../../public/images/projects/Calendar-image.jpg'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -35,6 +39,7 @@ lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl  xs:p-4
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           priority 
+        
            sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw"
         />
       </Link>
@@ -92,6 +97,7 @@ const Project = ({ type, title, img, link, githubLink }) => {
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           priority 
+       
           sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw"
         />
       </Link>
@@ -145,77 +151,83 @@ function projects () {
           <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
             <div className='col-span-12'>
               <FeaturedProject
-                title='Crypto Screener Application'
+                title='GooseTrack-Calendar Backend Team Project'
                 img={project1}
-                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency.'
-                link='/'
-                githubLink='/'
+                summary='In the GooseTrack-Calendar project, I played a dual role as Scrum Master and Back-End Developer. 
+                Our team built a robust backend API using modern technologies like Node.js, Express, MongoDB, and more. 
+                This API formed the foundation for seamless task and review management, user registration, and login,
+                 while incorporating NoSQL database management for enhanced performance and security.'
+        
+                priority
+                link='https://kharkivska-kurkuma.github.io/GooseTrack/'
+                githubLink='https://github.com/IvanRuskevych/GooseTrack-backend'
                 type='Featured Project'
               />
             </div>
             <div className='col-span-6 sm:col-span-12'>
               <Project
-                title='Crypto Screener Application'
-                img={project1}
-                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency.'
-                link='/'
-                githubLink='/'
+                title='
+                Ice Cream Website Development Team Project'
+                img={project3}
+                summary='In the Ice Cream Website Development Team Project, I played the dual role of Scrum Master and Front-End Developer, leading the development of the website`s visually appealing and functional footer using HTML and CSS. My optimization efforts ensured a seamless user experience on mobile devices, and I collaborated closely with the team to deliver outstanding results, utilizing technologies like Parcel, SASS, JS, HTML5, and CSS3.'
+                link='https://tetyana8222.github.io/comand-project-icecream/?product-user-name=&product-user-tel=&product-user-comment=#home'
+                githubLink='https://github.com/Tetyana8222/comand-project-icecream'
                 type='Featured Project'
+                priority
               />
             </div>
             <div className='col-span-6 sm:col-span-12'>
               {' '}
               <Project
-                title='Crypto Screener Application'
-                img={project1}
+                title='Web Studio: Creative Business Solutions'
+                img={project4}
                 summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency.'
-                link='/'
-                githubLink='/'
+                link='https://iamvovamoroz.github.io/web-08/'
+                githubLink='https://github.com/IamVovaMoroz/web-08'
                 type='Featured Project'
+                priority
               />
             </div>
             <div className='col-span-12'>
               <FeaturedProject
-                title='Crypto Screener Application'
-                img={project1}
-                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency.'
-                link='/'
-                githubLink='/'
+                title='
+                Film Search Engine Collaborative Project'
+                img={project2}
+                summary='In the Film Search Engine Collaborative Project, I played a dual role as Scrum Master and Front-End Developer. I oversaw agile development processes and took charge of designing and implementing a responsive movie search bar with real-time suggestions and dynamic results. My contributions improved the user experience and utilized technologies such as HTML5, CSS/SASS, JavaScript, API, REST, AJAX, and Parse.'
+                link='https://ivanruskevych.github.io/code-wizards-team-project-js/'
+                githubLink='https://github.com/IvanRuskevych/code-wizards-team-project-js'
                 type='Featured Project'
+                priority
               />
             </div>
             <div className='col-span-6 sm:col-span-12'>
               {' '}
               <Project
                 title='Crypto Screener Application'
-                img={project1}
+                img={project5}
                 summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency.'
                 link='/'
                 githubLink='/'
                 type='Featured Project'
+                priority
               />
             </div>
             <div className='col-span-6 sm:col-span-12'>
               {' '}
               <Project
                 title='Crypto Screener Application'
-                img={project1}
+                img={project5}
                 summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency.'
                 link='/'
                 githubLink='/'
                 type='Featured Project'
+                priority
               />
             </div>
           </div>
