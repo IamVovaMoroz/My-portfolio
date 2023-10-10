@@ -34,13 +34,28 @@ function Education() {
           className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]'
         />
         <ul className='w-full flex flex-col items-start justify-between ml-4  xs:ml-2'>
-          <Details
+        <Details
             type='Full-Stack Developer Node.js'
             time='2022-2023'
             place='GoIT.global'
             info='This course offers a comprehensive curriculum, including fundamental programming languages (HTML5, CSS3, SASS, JavaScript, React, Redux, Node.js) and key concepts like data structures and algorithms. Additionally, it features a year-long IT English course for industry-specific communication enhancement and provides valuable hands-on experience through collaborative team projects in web application development.'
             // certificate='https://drive.google.com/file/d/1_Lg-RBGhA2KUQ-RDg79NidxBtIA1DDvr/view'
           />
+          <Details
+            type='Training in product promotion and personal growth.'
+            time='2003-2013'
+            place='Morinda inc'
+            info='My regular attendance at business training sessions in Ukraine and the United States has nurtured a diverse range of valuable qualities within me. These experiences have fostered a high level of self-discipline, effective communication skills, goal setting and achievement, determination, and the ability to work seamlessly within a team, among many others. Moreover, they have played a pivotal role in my journey to establish my online business, including the successful launch of multiple e-commerce ventures.'
+            // certificate='https://drive.google.com/file/d/1_Lg-RBGhA2KUQ-RDg79NidxBtIA1DDvr/view'
+          />
+        <Details
+            type='Engineer in the Construction of Marine Structures'
+            time='1997-2000'
+            place='Odessa Nautical College of the Technical Fleet'
+            info='My education at the Odessa Nautical College of the Technical Fleet, where I graduated with a degree in Marine Structures Engineering, has equipped me with an engineering mindset, a keen attention to detail, and the ability to tackle complex tasks. These qualities have been pivotal in successfully executing my portfolio projects.'
+            // certificate='https://drive.google.com/file/d/1_Lg-RBGhA2KUQ-RDg79NidxBtIA1DDvr/view'
+          />
+                    
         </ul>
       </div>
     </div>
