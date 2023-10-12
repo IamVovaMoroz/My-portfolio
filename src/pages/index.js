@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
-import profilePicture from '../../public/images/profile/developer-pic-1.png'
+import profilePicture from '../../public/images/profile/developer-pic-1-min.png'
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
@@ -25,13 +25,14 @@ export default function Home () {
           <div className='flex items-center justify-between w-full lg:flex-col'>
             {/* Left part with image */}
             <div className='w-1/2 md:w-full'>
-              <Image
-                src={profilePicture}
-                alt='CodeImage'
-                className='w-full h-auto lg:hidden md:inline-block md:w-full'
-                priority
-                sizes='(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw'
-              />
+            <Image
+        src={profilePicture}
+        alt='Profile Picture' 
+        className='w-full h-auto lg:hidden md:inline-block md:w-full'
+        priority // Optionally, set 'priority' for faster loading
+        sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw"
+      />
+             
             </div>
 
             {/* Right part witn text */}

@@ -5,11 +5,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import project5 from '../../public/images/projects/crypto-screener-cover-image.jpg'
-import project4 from '../../public/images/projects/web2.jpg'
-import project3 from '../../public/images/projects/ice-cream_11.jpg'
-import project2 from '../../public/images/projects/films.jpg'
-import project1 from '../../public/images/projects/Calendar-image.jpg'
+// import project5 from '../../public/images/projects/crypto-screener-cover-image.jpg'
+import project5 from '../../public/images/projects/crypto-screener-cover-image-min.jpg'
+import project4 from '../../public/images/projects/web2-min.jpg'
+import project3 from '../../public/images/projects/ice-cream_11-min.jpg'
+import project2 from '../../public/images/projects/films-min.jpg'
+import project1 from '../../public/images/projects/Calendar-image-min.jpg'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -39,8 +40,12 @@ lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl  xs:p-4
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           priority 
+          sizes='(max-width: 768px) 100vw, (max-width:1200px) 50vw, 33vw'
+          
+
+
         
-           sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw"
+       
         />
       </Link>
 
@@ -52,6 +57,7 @@ lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl  xs:p-4
           href={link}
           target='_blank'
           className='hover:underline underline-offset-2'
+          
         >
           <h2 className='my-2 w-full text-left text-4xl font-bold  dark:text-light sm:text-sm'>{title}</h2>
         </Link>
@@ -89,6 +95,7 @@ const Project = ({ type, title, img, link, githubLink }) => {
         href={link}
         target='_blank'
         className='w-full cursor-pointer overflow-hidden rounded-lg'
+      
       >
         <FramerImage
           src={img}
@@ -96,7 +103,7 @@ const Project = ({ type, title, img, link, githubLink }) => {
           className='w-full h-auto'
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
-          priority 
+        
        
           sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw"
         />
@@ -158,7 +165,7 @@ function projects () {
                 This API formed the foundation for seamless task and review management, user registration, and login,
                  while incorporating NoSQL database management for enhanced performance and security.'
         
-                priority
+              
                 link='https://kharkivska-kurkuma.github.io/GooseTrack/'
                 githubLink='https://github.com/IvanRuskevych/GooseTrack-backend'
                 type='Featured Project'
@@ -173,7 +180,7 @@ function projects () {
                 link='https://tetyana8222.github.io/comand-project-icecream/?product-user-name=&product-user-tel=&product-user-comment=#home'
                 githubLink='https://github.com/Tetyana8222/comand-project-icecream'
                 type='Featured Project'
-                priority
+              
               />
             </div>
             <div className='col-span-6 sm:col-span-12'>
@@ -187,7 +194,7 @@ local currency.'
                 link='https://iamvovamoroz.github.io/web-08/'
                 githubLink='https://github.com/IamVovaMoroz/web-08'
                 type='Featured Project'
-                priority
+               
               />
             </div>
             <div className='col-span-12'>
@@ -227,7 +234,7 @@ local currency.'
                 link='/'
                 githubLink='/'
                 type='Featured Project'
-                priority
+            
               />
             </div>
           </div>
