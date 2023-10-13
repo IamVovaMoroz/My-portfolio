@@ -1,10 +1,13 @@
 # My Portfolio
+import profilePicture from '../../public/images/profile/developer-pic-1-min.png'
+![My Image](../../public/images/profile/portfolioMoroz_12.jpg)
+
 
 Welcome to my personal portfolio website, built with Next.js, Tailwind CSS, and Framer Motion. This website serves as a showcase of my work, highlighting various web development projects, articles, and more.
 
 ## Demo
 
-You can visit the live website at [My Portfolio](https://your-portfolio-url.com).
+You can visit the live website at [My Portfolio](https://iamvovamoroz.github.io/My-portfolio/)
 
 ## Project Structure
 
@@ -38,7 +41,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## Contact
 
-If you have any questions or feedback, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/your-linkedin-profile).
+If you have any questions or feedback, feel free to reach out to me on [LinkedIn](https://github.com/IamVovaMoroz).
 
 ---
 
