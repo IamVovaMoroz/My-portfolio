@@ -4,6 +4,7 @@ import profilePicture from '../../public/images/profile/developer-pic-1-min.png'
 ![My Image](https://github.com/IamVovaMoroz/My-portfolio/main/public/images/profile/portfolioMoroz_12.jpg)
 
 
+
 Welcome to my personal portfolio website, built with Next.js, Tailwind CSS, and Framer Motion. This website serves as a showcase of my work, highlighting various web development projects, articles, and more.
 
 ## Demo
