@@ -18,6 +18,8 @@ const FramerImage = motion(Image)
 
 const FeaturedProject = ({ type, title, summary, img, link, githubLink }) => {
   return (
+   
+    
     <article
       className='w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light dark:bg-dark 
 shadow-2xl p-12 relative rounded-br-2xl   dark:border-light 
@@ -80,11 +82,20 @@ lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl  xs:p-4
         </div>
       </div>
     </article>
+    
   )
 }
 
 const Project = ({ type, title, img, link, githubLink }) => {
   return (
+    <>
+    <Head>
+        <title>Projects page | Moroz Volodymyr</title>
+        <meta
+          name="description"
+          content="Explore Moroz Volodymyr's portfolio of web development projects, including web applications, front-end and back-end development, and more. Discover a range of projects built using technologies like React, Next.js, Node.js, and more."
+        />
+      </Head>
     <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid
      border-dark bg-light p-6 relative dark:border-light  dark:bg-dark xs:p-4'>
       <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl  dark:bg-light 
@@ -136,6 +147,7 @@ const Project = ({ type, title, img, link, githubLink }) => {
         </div>
       </div>
     </article>
+    </>
   )
 }
 

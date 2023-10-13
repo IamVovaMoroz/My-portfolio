@@ -116,11 +116,10 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
 function articles () {
   return (
     <>
-      <Head>
-        {/* title on a web page for SEO  */}
-        <title>Articles page </title>
-        <meta name='description' content='any description for SEO' />{' '}
-      </Head>
+     <Head>
+  <title>Articles page</title>
+  <meta name='description' content='Explore a collection of informative articles on web development, ReactJS, custom hooks, and more. Learn from tutorials and guides authored by Moroz Volodymyr.' />
+</Head>
       <TransitionEffect/>
       <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
         <Layout className='pt-16'>

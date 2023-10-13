@@ -15,7 +15,7 @@ export default function Home () {
     <>
       {/* Meta-data  */}
       <Head>
-        <title>Create Next App</title>
+        <title>Home page | Next App</title>
         <meta name="description" content="Moroz Volodymyr's portfolio as a Full-Stack Developer using Next.js, Tailwind CSS, and Framer-motion." />
 
       </Head>
