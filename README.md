@@ -1,6 +1,5 @@
 # My Portfolio
-import profilePicture from '../../public/images/profile/developer-pic-1-min.png'
-public/images/profile/portfolioMoroz_12.jpg
+
 
 ![My Image](/public/images/profile/portfolioMoroz_12.jpg)
 
