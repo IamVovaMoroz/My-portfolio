@@ -3,7 +3,7 @@ import NavBar from '@/components/NavBar'
 import '@/styles/globals.css'
 import { AnimatePresence } from 'framer-motion'
 
-// add Montserrat
+// add Montserrat.
 import { Montserrat } from 'next/font/google'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
