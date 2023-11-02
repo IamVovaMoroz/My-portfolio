@@ -44,6 +44,7 @@ function Skills () {
         <Skill name='ReactJS' x='0vw' y='18vw' />
         <Skill name='NextJS' x='-22vw' y='-15vw' />
         <Skill name='MongoDB' x='0vw' y='-14vw' />
+        <Skill name='Postman' x='0vw' y='10vw' />
         <Skill name='Redux' x='0vw' y='-20vw' />
         <Skill name='Figma' x='8vw' y='-10vw' />
         <Skill name='Tailwind CSS' x='20vw' y='-17vw' />
