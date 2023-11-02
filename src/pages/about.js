@@ -73,9 +73,9 @@ function about () {
               </p>
               <p className='font-medium'>
                 - My proficiency spans a wide range of technologies crucial for
-                modern development, including HTML5, CSS3, SASS, JavaScript,
+                modern development, including HTML5, CSS3, SASS, JavaScript, TypeScript,
 
-                React, Redux, Node.js, Git, Next.js, Tailwind CSS, and
+                React, Redux, Node.js, Git, Next.js, MongoDB, Tailwind CSS, and
                 Framer-motion. My portfolio, meticulously crafted using Next.js,
                 Tailwind CSS, and Framer-motion, showcases my capabilities.
                 Here, you can explore my projects, access my resume, and find
