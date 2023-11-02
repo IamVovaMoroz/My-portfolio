@@ -36,12 +36,12 @@ function Experience() {
           className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]'     />
         <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
           <Details
-            position="Full-Stack Developer (Upcoming)"
-            company="Your Future Company"
-            companyLink="/"
-            time="Expected Start Date: 2023"
-            address="Location: Your Preferred Location"
-            work="I'm thrilled to join Your Future Company as a Full-Stack Developer in 2023. I'll be working on creating innovative web features, improving user experiences, and collaborating with cross-functional teams. I'm excited to use my skills to make a significant impact here."
+            position="Junior Full-Stack Developer (Remotely)"
+            company="Baza-trainee"
+            companyLink="https://baza-trainee.tech/en"
+            time="09.2023 - Present"
+            address="Ukraine"
+            work="Currently, I volunteer as a Full Stack Developer on social impact projects within a team of front-end and back-end developers, designers, and testers, focusing on creating websites to assist women and children. I actively participate in both front-end and back-end development, contributing to all aspects of the website creation process."
           />
            <Details
             position="Founder and director"
