@@ -40,7 +40,7 @@ function about () {
   return (
     <>
       <Head>
-        {/* title on a web page for SEO */}
+        {/* title on a web page for SEO. */}
         <title>About page | Moroz Volodymyr </title>
         <meta name="description" content="Meet Volodymyr Moroz, a Full Stack Developer specializing in Node.js. Learn about his journey and skills in web development." />
       </Head>
