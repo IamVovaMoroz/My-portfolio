@@ -48,7 +48,7 @@ function Experience () {
             position='Junior Full-Stack Developer'
             company='Vixdev'
             companyLink='https://www.linkedin.com/company/vixdev/'
-            time='01.2024 - present'
+            time='12.2023 - present'
             address='Ukraine'
             work='Currently engaged in both front-end and back-end development at a software development company, contributing to all stages of website creation.'
           />
