@@ -233,9 +233,9 @@ function projects () {
             <div className='col-span-12'>
               <FeaturedProject
                 title='
-                Film Search Engine Collaborative Project'
+                Film Search Engine Project'
                 img={project2}
-                summary='In the Film Search Engine Collaborative Project, I played a dual role as Scrum Master and Front-End Developer. I oversaw agile development processes and took charge of designing and implementing a responsive movie search bar with real-time suggestions and dynamic results. My contributions improved the user experience and utilized technologies such as HTML5, CSS/SASS, JavaScript, API, REST, AJAX, and Parse.'
+                summary='In the Film Search Engine Project, I played a dual role as Scrum Master and Front-End Developer. I oversaw agile development processes and took charge of designing and implementing a responsive movie search bar with real-time suggestions and dynamic results. My contributions improved the user experience and utilized technologies such as HTML5, CSS/SASS, JavaScript, API, REST, AJAX, and Parse.'
                 link='https://ivanruskevych.github.io/code-wizards-team-project-js/'
                 githubLink='https://github.com/IvanRuskevych/code-wizards-team-project-js'
                 type='Featured Project'
