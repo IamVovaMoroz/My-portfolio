@@ -37,14 +37,20 @@ function Skills () {
           Web
         </motion.div>
         <Skill name='HTML' x='-22vw' y='2vw' />
-        <Skill name='CSS' x='-10vw' y='-10vw' />
+        <Skill name='Nest' x='-32vw' y='2vw' />
+        <Skill name='CSS/SASS' x='-20vw' y='-10vw' />
+        <Skill name='Docker' x='-10vw' y='-10vw' />
+        <Skill name='Wordpress' x='-30vw' y='-10vw' />
         <Skill name='Javascript' x='20vw' y='10vw' />
         <Skill name='Git' x='20vw' y='-6vw' />
         <Skill name='TypeScript' x='15vw' y='-3vw' />
+        <Skill name='Express' x='30vw' y='-3vw' />
         <Skill name='ReactJS' x='0vw' y='18vw' />
+        <Skill name='Strapi' x='10vw' y='18vw' />
         <Skill name='NextJS' x='-22vw' y='-15vw' />
         <Skill name='MongoDB' x='0vw' y='-14vw' />
         <Skill name='Postman' x='0vw' y='10vw' />
+        <Skill name='Rest API' x='-10vw' y='10vw' />
         <Skill name='Redux' x='0vw' y='-20vw' />
         <Skill name='Figma' x='8vw' y='-10vw' />
         <Skill name='Tailwind CSS' x='20vw' y='-17vw' />

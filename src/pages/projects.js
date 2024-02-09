@@ -5,6 +5,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import project6 from '../../public/images/projects/toystore-min.jpg'
+import project7 from '../../public/images/projects/marta-min.jpg'
 
 import project5 from '../../public/images/projects/crypto-screener-cover-image-min.jpg'
 import project4 from '../../public/images/projects/web2-min.jpg'
@@ -18,8 +20,6 @@ const FramerImage = motion(Image)
 
 const FeaturedProject = ({ type, title, summary, img, link, githubLink }) => {
   return (
-   
-    
     <article
       className='w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light dark:bg-dark 
 shadow-2xl p-12 relative rounded-br-2xl   dark:border-light 
@@ -27,8 +27,10 @@ lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl  xs:p-4
 '
     >
       {/* shadow */}
-      <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl  dark:bg-light xs:-right-2
-       sm:h-[102%] xs:w-[100%] xs:rounded-[1.5rem]' />
+      <div
+        className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl  dark:bg-light xs:-right-2
+       sm:h-[102%] xs:w-[100%] xs:rounded-[1.5rem]'
+      />
 
       <Link
         href={link}
@@ -41,13 +43,8 @@ lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl  xs:p-4
           className='w-full h-auto'
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
-          priority 
+          priority
           sizes='(max-width: 768px) 100vw, (max-width:1200px) 50vw, 33vw'
-          
-
-
-        
-       
         />
       </Link>
 
@@ -59,15 +56,18 @@ lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl  xs:p-4
           href={link}
           target='_blank'
           className='hover:underline underline-offset-2'
-          
         >
-          <h2 className='my-2 w-full text-left text-4xl font-bold  dark:text-light sm:text-sm'>{title}</h2>
+          <h2 className='my-2 w-full text-left text-4xl font-bold  dark:text-light sm:text-sm'>
+            {title}
+          </h2>
         </Link>
-        <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
+        <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>
+          {summary}
+        </p>
         <div className='my-2 flex items-center'>
           <Link href={githubLink} target='_blank' className='w-10'>
             {' '}
-            <GithubIcon />    {' '}
+            <GithubIcon />{' '}
           </Link>
           <Link
             href={link}
@@ -76,77 +76,78 @@ lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl  xs:p-4
             sm:px-4 sm:text-base
             '
           >
-        
             Visit Project
           </Link>
         </div>
       </div>
     </article>
-    
   )
 }
 
 const Project = ({ type, title, img, link, githubLink }) => {
   return (
     <>
-    <Head>
+      <Head>
         <title>Projects page | Moroz Volodymyr</title>
         <meta
-          name="description"
+          name='description'
           content="Explore Moroz Volodymyr's portfolio of web development projects, including web applications, front-end and back-end development, and more. Discover a range of projects built using technologies like React, Next.js, Node.js, and more."
         />
       </Head>
-    <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid
-     border-dark bg-light p-6 relative dark:border-light  dark:bg-dark xs:p-4'>
-      <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl  dark:bg-light 
-      md:-right-2 md:w-[101%] xs:h-[101%] xs:rounded-[1.5rem]
-      ' />
-
-      <Link
-        href={link}
-        target='_blank'
-        className='w-full cursor-pointer overflow-hidden rounded-lg'
-      
+      <article
+        className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid
+     border-dark bg-light p-6 relative dark:border-light  dark:bg-dark xs:p-4'
       >
-        <FramerImage
-          src={img}
-          alt={title}
-          className='w-full h-auto'
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.2 }}
-        
-       
-          sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw"
+        <div
+          className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl  dark:bg-light 
+      md:-right-2 md:w-[101%] xs:h-[101%] xs:rounded-[1.5rem]
+      '
         />
-      </Link>
-      <div className='w-full flex flex-col items-start justify-between mt-4 '>
-        <span className='text-primary font-medium text-xl  dark:text-primaryDark lg:text-lg md:text-base'>{type}</span>
+
         <Link
           href={link}
           target='_blank'
-          className='hover:underline underline-offset-2'
+          className='w-full cursor-pointer overflow-hidden rounded-lg'
         >
-          <h2 className='my-2 w-full text-left text-3xl font-bold dark:text-light lg:text-2xl'>
-            {title}
-          </h2>
+          <FramerImage
+            src={img}
+            alt={title}
+            className='w-full h-auto'
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+            sizes='(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw'
+          />
         </Link>
-
-        <div className='w-full my-2 flex items-center justify-between'>
+        <div className='w-full flex flex-col items-start justify-between mt-4 '>
+          <span className='text-primary font-medium text-xl  dark:text-primaryDark lg:text-lg md:text-base'>
+            {type}
+          </span>
           <Link
             href={link}
             target='_blank'
-            className=' text-lg font-semibold underline md:text-base'
+            className='hover:underline underline-offset-2'
           >
-            {' '}
-            Visit{' '}
+            <h2 className='my-2 w-full text-left text-3xl font-bold dark:text-light lg:text-2xl'>
+              {title}
+            </h2>
           </Link>
-          <Link href={githubLink} target='_blank' className='w-8 md:w-6'>
-            {' '}
-            <GithubIcon />
-          </Link>
+
+          <div className='w-full my-2 flex items-center justify-between'>
+            <Link
+              href={link}
+              target='_blank'
+              className=' text-lg font-semibold underline md:text-base'
+            >
+              {' '}
+              Visit{' '}
+            </Link>
+            <Link href={githubLink} target='_blank' className='w-8 md:w-6'>
+              {' '}
+              <GithubIcon />
+            </Link>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
     </>
   )
 }
@@ -159,7 +160,7 @@ function projects () {
         <title>Projects page </title>
         <meta name='description' content='any description for SEO' />
       </Head>
-      <TransitionEffect/>
+      <TransitionEffect />
       <main className='w-full mb-16 flex flex-col items-center justify-center  dark:text-light'>
         <Layout className='pt-16'>
           <AnimatedText
@@ -170,14 +171,12 @@ function projects () {
           <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
             <div className='col-span-12'>
               <FeaturedProject
-                title='GooseTrack-Calendar Backend Team Project'
+                title='GooseTrack-Calendar Backend Project'
                 img={project1}
                 summary='In the GooseTrack-Calendar project, I played a dual role as Scrum Master and Back-End Developer. 
                 Our team built a robust backend API using modern technologies like Node.js, Express, MongoDB, and more. 
                 This API formed the foundation for seamless task and review management, user registration, and login,
                  while incorporating NoSQL database management for enhanced performance and security.'
-        
-              
                 link='https://kharkivska-kurkuma.github.io/GooseTrack/'
                 githubLink='https://github.com/IvanRuskevych/GooseTrack-backend'
                 type='Featured Project'
@@ -185,14 +184,13 @@ function projects () {
             </div>
             <div className='col-span-6 sm:col-span-12'>
               <Project
-                title='
-                Ice Cream Website Development Team Project'
+                title='Ice Cream Website Development Project'
                 img={project3}
                 summary='In the Ice Cream Website Development Team Project, I played the dual role of Scrum Master and Front-End Developer, leading the development of the website`s visually appealing and functional footer using HTML and CSS. My optimization efforts ensured a seamless user experience on mobile devices, and I collaborated closely with the team to deliver outstanding results, utilizing technologies like Parcel, SASS, JS, HTML5, and CSS3.'
                 link='https://tetyana8222.github.io/comand-project-icecream/?product-user-name=&product-user-tel=&product-user-comment=#home'
                 githubLink='https://github.com/Tetyana8222/comand-project-icecream'
+                priority
                 type='Featured Project'
-              
               />
             </div>
             <div className='col-span-6 sm:col-span-12'>
@@ -201,12 +199,35 @@ function projects () {
                 title='Web Studio: Innovative Creative Business Solutions'
                 img={project4}
                 summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency.'
+               It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
+              local currency.'
                 link='https://iamvovamoroz.github.io/web-08/'
                 githubLink='https://github.com/IamVovaMoroz/web-08'
+                priority
                 type='Featured Project'
-               
+              />
+            </div>
+           
+            <div className='col-span-12'>
+              <FeaturedProject
+                title='The city of goodness'
+                img={project7}
+                summary='Participated as a volunteer in a social project, leading the backend team while also developing the frontend. Designed and implemented an admin panel using Strapi, utilizing CSS/SASS, JavaScript, Rest API, Next.js, and Strapi technologies.'
+                link='https://martha-house.vercel.app/en-US'
+                githubLink='https://github.com/IamVovaMoroz/marta_backend_strapi'
+                type='Featured Project'
+                priority
+              />
+            </div>
+            <div className='col-span-12'>
+              <FeaturedProject
+                title='ToyJoy Project'
+                img={project6}
+                summary='I developed and deployed a WordPress website with an admin panel for a children store, providing a wide selection of products and convenient purchasing options. My expertise includes using HTML5, CSS/SASS, JavaScript, and PHP to create stylish and functional designs, integrating with Cloudinary for efficient media content management, and working with REST API to extend functionality and interact with external services. The result is an attractive and intuitive interface, offering convenient conditions for purchasing children products.'
+                link='http://toyjoy.great-site.net/?i=2'
+                githubLink='https://github.com/IamVovaMoroz/childhood'
+                type='Featured Project'
+                priority
               />
             </div>
             <div className='col-span-12'>
@@ -223,7 +244,7 @@ local currency.'
             </div>
             <div className='col-span-6 sm:col-span-12'>
               {' '}
-              <Project
+             <Project
                 title='Crypto Screener Application'
                 img={project5}
                 summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
@@ -232,7 +253,6 @@ local currency.'
                 link='/'
                 githubLink='/'
                 type='Featured Project'
-                priority
               />
             </div>
             <div className='col-span-6 sm:col-span-12'>
@@ -246,7 +266,6 @@ local currency.'
                 link='/'
                 githubLink='/'
                 type='Featured Project'
-            
               />
             </div>
           </div>
