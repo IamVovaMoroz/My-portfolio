@@ -207,7 +207,7 @@ function projects () {
                 type='Featured Project'
               />
             </div>
-           
+
             <div className='col-span-12'>
               <FeaturedProject
                 title='The city of goodness'
@@ -223,7 +223,7 @@ function projects () {
               <FeaturedProject
                 title='ToyJoy Project'
                 img={project6}
-                summary='I developed and deployed a WordPress website with an admin panel for a children store, providing a wide selection of products and convenient purchasing options. My expertise includes using HTML5, CSS/SASS, JavaScript, and PHP to create stylish and functional designs, integrating with Cloudinary for efficient media content management, and working with REST API to extend functionality and interact with external services. The result is an attractive and intuitive interface, offering convenient conditions for purchasing children products.'
+                summary='I developed and deployed a WordPress website with an admin panel for a store catering to children, offering a diverse range of products and user-friendly purchasing options. My expertise encompasses HTML5, CSS/SASS, JavaScript, and PHP for crafting stylish and functional designs. Additionally, I integrated Cloudinary for efficient media content management and utilized REST APIs to enhance functionality and interact with external services. The outcome is an appealing and intuitive interface, providing convenient conditions for purchasing products designed for kids.'
                 link='http://toyjoy.great-site.net/?i=2'
                 githubLink='https://github.com/IamVovaMoroz/childhood'
                 type='Featured Project'
@@ -244,7 +244,7 @@ function projects () {
             </div>
             <div className='col-span-6 sm:col-span-12'>
               {' '}
-             <Project
+              <Project
                 title='Crypto Screener Application'
                 img={project5}
                 summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
