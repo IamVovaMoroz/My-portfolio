@@ -80,8 +80,9 @@ function about () {
                 - My proficiency spans a wide range of technologies crucial for
                 modern development, including but not limited to HTML5, CSS3,
                 SASS, JavaScript, TypeScript, Rest API, Nest.js, Express, React,
-                Redux, Node.js, Git, Next.js, MongoDB, Mongoose, Postman,
-                Tailwind CSS, Framer Motion, WordPress, Strapi, and others.
+                Redux, Node.js, Git, Next.js, MongoDB, Mongoose, SQLite,
+                PosgreSQL, Postman, Tailwind CSS, Framer Motion, WordPress,
+                Strapi, TypeORM, and others.
               </p>
             </div>
 
