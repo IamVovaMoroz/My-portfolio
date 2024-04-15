@@ -5,14 +5,15 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import project6 from '../../public/images/projects/toystore-min.jpg'
+import project11 from '../../public/images/projects/smartartedit.png'
 import project7 from '../../public/images/projects/marta-min.jpg'
-
+import project6 from '../../public/images/projects/toystore-min.jpg'
 import project5 from '../../public/images/projects/crypto-screener-cover-image-min.jpg'
 import project4 from '../../public/images/projects/web2-min.jpg'
 import project3 from '../../public/images/projects/ice-cream_11-min.jpg'
 import project2 from '../../public/images/projects/films-min.jpg'
 import project1 from '../../public/images/projects/Calendar-image-min.jpg'
+
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -171,6 +172,28 @@ function projects () {
           <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
             <div className='col-span-12'>
               <FeaturedProject
+                title='AI-driven photo editing App'
+                img={project11}
+                summary='A full-stack project utilizing artificial intelligence functions for photo processing. It modifies photos, enhances quality, removes backgrounds, and integrates a payment system. Built with React, Next.js, TailwindCSS, TypeScript, Clerk, MongoDB, Cloudinary AI, Stripe, and other libraries.'
+                link='https://smartartedit.vercel.app/'
+                githubLink='https://github.com/IamVovaMoroz/smartartedit'
+                type='Featured Project'
+              />
+            </div>
+
+            <div className='col-span-12'>
+              <FeaturedProject
+                title='ToyJoy Project'
+                img={project6}
+                summary='WordPress website with an admin panel for a store catering to children, offering a diverse range of products and user-friendly purchasing options. My expertise encompasses HTML5, CSS/SASS, JavaScript, and PHP for crafting stylish and functional designs. Additionally, I integrated Cloudinary for efficient media content management and utilized REST APIs to enhance functionality and interact with external services. The outcome is an appealing and intuitive interface, providing convenient conditions for purchasing products designed for kids.'
+                link='http://toyjoy.great-site.net/?i=2'
+                githubLink='https://github.com/IamVovaMoroz/childhood'
+                type='Featured Project'
+                priority
+              />
+            </div>
+            <div className='col-span-12'>
+              <FeaturedProject
                 title='GooseTrack-Calendar Backend Project'
                 img={project1}
                 summary='In the GooseTrack-Calendar project, I played a dual role as Scrum Master and Back-End Developer. 
@@ -207,7 +230,6 @@ function projects () {
                 type='Featured Project'
               />
             </div>
-
             <div className='col-span-12'>
               <FeaturedProject
                 title='The city of goodness'
@@ -219,17 +241,7 @@ function projects () {
                 priority
               />
             </div>
-            <div className='col-span-12'>
-              <FeaturedProject
-                title='ToyJoy Project'
-                img={project6}
-                summary='I developed and deployed a WordPress website with an admin panel for a store catering to children, offering a diverse range of products and user-friendly purchasing options. My expertise encompasses HTML5, CSS/SASS, JavaScript, and PHP for crafting stylish and functional designs. Additionally, I integrated Cloudinary for efficient media content management and utilized REST APIs to enhance functionality and interact with external services. The outcome is an appealing and intuitive interface, providing convenient conditions for purchasing products designed for kids.'
-                link='http://toyjoy.great-site.net/?i=2'
-                githubLink='https://github.com/IamVovaMoroz/childhood'
-                type='Featured Project'
-                priority
-              />
-            </div>
+           
             <div className='col-span-12'>
               <FeaturedProject
                 title='
