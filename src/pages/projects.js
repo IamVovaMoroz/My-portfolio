@@ -5,14 +5,15 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import project11 from '../../public/images/projects/smartartedit.png'
-import project7 from '../../public/images/projects/marta-min.jpg'
-import project6 from '../../public/images/projects/toystore-min.jpg'
-import project5 from '../../public/images/projects/crypto-screener-cover-image-min.jpg'
-import project4 from '../../public/images/projects/web2-min.jpg'
-import project3 from '../../public/images/projects/ice-cream_11-min.jpg'
-import project2 from '../../public/images/projects/films-min.jpg'
 import project1 from '../../public/images/projects/Calendar-image-min.jpg'
+import project2 from '../../public/images/projects/films-min.jpg'
+import project3 from '../../public/images/projects/ice-cream_11-min.jpg'
+import project4 from '../../public/images/projects/web2-min.jpg'
+import project5 from '../../public/images/projects/crypto-screener-cover-image-min.jpg'
+import project6 from '../../public/images/projects/toystore-min.jpg'
+import project7 from '../../public/images/projects/marta-min.jpg'
+import project8 from '../../public/images/projects/smartartedit.png'
+import project9 from '../../public/images/projects/web13.jpg'
 
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
@@ -158,7 +159,7 @@ function projects () {
     <>
       <Head>
         {/* title on a web page for SEO  */}
-        <title>Projects page </title>
+        <title>Projects page</title>
         <meta name='description' content='any description for SEO' />
       </Head>
       <TransitionEffect />
@@ -173,10 +174,21 @@ function projects () {
             <div className='col-span-12'>
               <FeaturedProject
                 title='AI-driven photo editing App'
-                img={project11}
+                img={project8}
                 summary='A full-stack project utilizing artificial intelligence functions for photo processing. It modifies photos, enhances quality, removes backgrounds, and integrates a payment system. Built with React, Next.js, TailwindCSS, TypeScript, Clerk, MongoDB, Cloudinary AI, Stripe, and other libraries.'
                 link='https://smartartedit.vercel.app/'
                 githubLink='https://github.com/IamVovaMoroz/smartartedit'
+                type='Featured Project'
+              />
+            </div>
+
+            <div className='col-span-12'>
+              <FeaturedProject
+                title='Responsive sales and support tracking platform.'
+                img={project9}
+                summary='Crafted with precision and finesse, our frontend project offers seamless responsiveness across all devices, from mobile to laptop. Featuring intuitive sales monitoring, personalized customer support, and comprehensive growth tracking, it stands as a testament to innovation in web development. Integrated with Stripe for effortless payments, this project showcases my expertise in Next.js, TypeScript, and Tailwind CSS, Radix-ui setting new standards in user experience and functionality.'
+                link='https://next-ts-pro.vercel.app/'
+                githubLink='https://github.com/IamVovaMoroz/next-ts-pro'
                 type='Featured Project'
               />
             </div>
@@ -241,7 +253,7 @@ function projects () {
                 priority
               />
             </div>
-           
+
             <div className='col-span-12'>
               <FeaturedProject
                 title='

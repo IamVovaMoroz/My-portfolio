@@ -38,6 +38,7 @@ export default function Home () {
 
             {/* Right part witn text */}
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
+
               {/* animated text */}
               <AnimatedText
                 text='Transforming Ideas Into Real Web Solutions with Code and Design Excellence'
@@ -54,7 +55,7 @@ export default function Home () {
                 showcasing my expertise in React.js and web development.
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
-                {/* target={'_blank'} - open in the new tab,, /dummy.pdf - place for resume */}
+                {/* target={'_blank'} - open in the new tab, /dummy.pdf - place for resume */}
                 <Link
                   href='/newPortfolio.pdf'
                   target={'_blank'}
