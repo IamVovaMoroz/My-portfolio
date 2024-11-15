@@ -4,7 +4,7 @@
 ![My Image](/public/images/profile/portfolioMoroz_12.jpg)
 
 
-Welcome to my personal portfolio website, built with Next.js, Tailwind CSS, and Framer Motion. This website serves as a showcase of my work, highlighting various web development projects, articles, and more.
+Welcome to my personal portfolio website, built with Next.js, Tailwind CSS, and Framer Motion. This website serves as a showcase of my work, highlighting various web development projects, articles, and more!
 
 ## Demo
 
