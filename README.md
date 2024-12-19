@@ -10,7 +10,7 @@ Welcome to my personal portfolio website, built with Next.js, Tailwind CSS, and 
 
 You can visit the live website at [My Portfolio](https://iamvovamoroz.github.io/My-portfolio/)
 
-## Project Structure.
+## Project Structure
 
 - **Home Page:** Introduction and overview of my skills and expertise.
 - **Projects:** Showcase of my latest web development projects, including both front-end and back-end work.
