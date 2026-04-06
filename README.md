@@ -1,6 +1,5 @@
 # My Portfolio.
 
-
 ![My Image](/public/images/profile/portfolioMoroz_12.jpg)
 
 
