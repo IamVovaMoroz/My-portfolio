@@ -13,7 +13,7 @@ const quote = {
     transition: {
       delay: 0.2,
       duration: 1, // time for animate
-      // ease: "easeOut", // Type of animat (can be "linear", "easeInOut", "easeOut" and others)
+      // ease: "easeOut"!!!, // Type of animat (can be "linear", "easeInOut", "easeOut" and others)
       // if add staggerChildren than delete initial and animate for children/ staggerChildren - time before next word
       staggerChildren: 0.19
     }
