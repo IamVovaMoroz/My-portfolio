@@ -1,4 +1,4 @@
-# My Portfolio.
+# My Portfolio
 
 ![My Image](/public/images/profile/portfolioMoroz_12.jpg)
 
@@ -29,7 +29,7 @@ To run this project locally, follow these steps:
 2. Install the project dependencies using `npm install`.
 3. Run the development server with `npm run dev`.
 
-## How to Use
+## How to Use!!!!
 
 - The home page provides an introduction to my skills and a link to my resume.
 - The "Projects" page displays various web development projects I have worked on.
